@@ -1,0 +1,21 @@
+.btn{
+  display: inline-block;
+  border: 1px solid #dddddd;
+  font-family: $font-semi-bold;
+}
+.warning{
+  @extend .btn;
+  color: #e84c3d;
+  background-color: #ffff00;
+}
+.danger{
+  @extend .btn;
+  color: #337ab7;
+  background-color: red;
+}
+.success{
+  @extend .btn;
+  color: #fff;
+  background-color: #14a85c;
+  padding: 5px 10px;
+}

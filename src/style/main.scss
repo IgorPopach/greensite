@@ -1,0 +1,28 @@
+/*
+* Third Party
+*/
+@import "../../assets/bootstrap.min.css";
+@import "../../assets/font-awesome.min.css";
+
+
+/*
+* Custom
+*/
+@import "partials/variable";
+@import "partials/colors";
+@import "partials/fonts";
+@import "partials/taxonomies";
+@import "partials/buttons";
+@import "partials/media";
+
+
+
+
+@import "views/header";
+@import "views/home";
+@import "views/footer";
+
+
+
+
+
