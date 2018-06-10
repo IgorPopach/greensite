@@ -1,7 +1,6 @@
 /*
 * Third Party
 */
-@import "../../assets/bootstrap.min.css";
 @import "../../assets/font-awesome.min.css";
 
 
@@ -9,16 +8,21 @@
 * Custom
 */
 @import "partials/variable";
-@import "partials/colors";
 @import "partials/fonts";
-@import "partials/taxonomies";
+@import "partials/backgrounds";
 @import "partials/buttons";
 @import "partials/media";
 
+/*
+* components
+*/
+@import "components/custom-icons";
+@import "components/contact";
 
 
 
-@import "views/header";
+
+@import "views/site-header";
 @import "views/home";
 @import "views/footer";
 

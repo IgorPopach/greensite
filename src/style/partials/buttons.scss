@@ -1,21 +1,37 @@
-.btn{
-  display: inline-block;
-  border: 1px solid #dddddd;
-  font-family: $font-semi-bold;
+.custom-writing {
+  .live-chat {
+    margin-top: 62px;
+    border-radius: 3px;
+    border: 1px solid $textSecondary;
+    a {
+      .fa-angle-right {
+        content: '\f105';
+        font-family: $font-awesome;
+        font-size: 25px;
+      }
+      color: $textSecondary;
+      text-transform: uppercase;
+    }
+  }
+
+  .order-now {
+    width: 270px;
+    height: 70px;
+    margin-bottom: 50px;
+    border: 1px solid $textSecondary;
+    border-radius: 3px;
+    background-color: $secondaryColor;
+    color: $textSecondary;
+  }
 }
-.warning{
-  @extend .btn;
-  color: #e84c3d;
-  background-color: #ffff00;
-}
-.danger{
-  @extend .btn;
-  color: #337ab7;
-  background-color: red;
-}
-.success{
-  @extend .btn;
-  color: #fff;
-  background-color: #14a85c;
-  padding: 5px 10px;
+
+.special-offer {
+  .the-list-of-discounts {
+    width: 270px;
+    margin: 10px 0;
+    text-transform: uppercase;
+    background-color: $green;
+    border: 1px solid $textSecondary;
+    border-radius: 3px;
+  }
 }

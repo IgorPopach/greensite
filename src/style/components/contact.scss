@@ -1,0 +1,50 @@
+.contact{
+  &-info{
+    padding: 5px 0;
+    span{
+      font-size: 16px;
+    }
+  }
+
+  &-phone{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+    color: $textSecondary;
+    a{
+      color: inherit;
+    }
+  }
+
+  &-social {
+    display: flex;
+    min-height: 40px;
+    flex-direction: row-reverse;
+    align-items: center;
+    color: $textSecondary;
+    a{
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      margin: 0 5px;
+      color: inherit;
+      text-align: center;
+      line-height: 30px;
+      vertical-align: middle;
+      transition: background-color 0.3s;
+      &.pinterest{
+        background-color: #e84c3d;
+      }
+      &.twitter{
+        background-color: #28c3ff;
+      }
+      &.facebook{
+        background-color: #496194;
+      }
+      &:hover{
+        background-color: #ccc;
+      }
+    }
+  }
+}

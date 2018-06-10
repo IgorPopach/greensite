@@ -1,0 +1,81 @@
+.site-footer {
+  .main-footer{
+    padding: 24px 0;
+  }
+  .row > .no-padding {
+    padding: 0;
+  }
+  p {
+    margin: 5px;
+    color: #fff;
+  }
+  .logo-footer {
+    background-color: #ccd3dd;
+    border: 2px solid #fff;
+  }
+  .text-footer {
+    position: relative;
+    font-weight: 300;
+    font-size: 11px;
+    width: 850px;
+    padding: 25px;
+    border: 2px solid #fff;
+    text-align: justify;
+    .angle-down {
+      position: absolute;
+      right: 50px;
+      bottom: -15px;
+      display: block;
+      width: 34px;
+      height: 34px;
+      background-color: $secondaryColor;
+      border: 1px solid $textSecondary;
+      .fa-angle-down {
+        content: '\f107';
+        font-size: 25px;
+        font-family: $font-awesome;
+        display: block;
+        margin: auto;
+        color: $textSecondary;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.contact-footer {
+  .join-us {
+    display: flex;
+    min-height: 40px;
+    flex-direction: row;
+    align-items: center;
+    color: $textSecondary;
+    a{
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      margin: 0 5px;
+      color: inherit;
+      text-align: center;
+      line-height: 30px;
+      vertical-align: middle;
+      transition: background-color 0.3s;
+      &.pinterest{
+        background-color: #e84c3d;
+      }
+      &.twitter{
+        background-color: #28c3ff;
+      }
+      &.facebook{
+        background-color: #496194;
+      }
+      &:hover{
+        background-color: #ccc;
+      }
+    }
+  }
+  p {
+    line-height: 30px;
+    text-align: center;
+  }
+}

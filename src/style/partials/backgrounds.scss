@@ -1,0 +1,14 @@
+.bg{
+  &-green{
+    background-color: $green;
+  }
+  &-ligh-green{
+    background-color: $lightGreen;
+  }
+  &-white{
+    background-color: #fff;
+  }
+  &-gray{
+    background-color: #4e4e4e;
+  }
+}

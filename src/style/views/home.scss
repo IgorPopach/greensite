@@ -1,90 +1,107 @@
-$screenColor: test;
-//body > main > section > div > div > div > div.col-md-4.HiW-block-center > div.HiW-text
-.h-i-w{
-    @if $screenColor == standart{
-      background-color: $bgColorPrimaryLight;
+.custom-writing {
+  height: 470px;
+   h1,h2 {
+     text-transform: uppercase;
+     color: $textSecondary;
+     text-align: center;
+   }
+  h1 {
+    margin-top: 62px;
   }
-  @else if $screenColor == day{
-    background-color: #e84c3d;
+  .text-animation {
+    width: 290px;
+    margin-left: 355px;
+    span {
+      text-transform: uppercase;
+      font-size: 20px;
+    }
   }
-  @else if $screenColor == night{
-    background-color: #3d3d3d;
+  .img-boy {
+    width: 1192px;
+    height: 506px;
+    position: absolute;
+    background-image: url('../img/img-boy.png');
+    bottom: 236px;
+    left: 120px;
   }
-  @else {
-    background-color: #003300;
-  }
-  margin-bottom: 40px;
-  h2{
-    @include font(36px, #fff, 400, $font-regular);
-    text-align: center;
-    margin: 60px 0 60px 0;
+}
 
-    @include notebook{
-      @include font(60px, #acbbca, 400, $font-regular);
-      background-color: red;
-      font-size: convertToEm(36px);
-    }
-    @include tablet{
-      @include font(18px, #ccc, 700, $font-regular);
-    }
+.special-offer {
+  color: $textSecondary;
+  vertical-align: middle;
+  span {
+    line-height: 45px;
   }
-  .HiW-block{
-    display: inline-block;
-    width: 70px;
-    height: 70px;
-    border: 1px solid #cccccc;
-    background-color: #e84c3d;
+}
+
+.our-advantages {
+  h2 {
     text-align: center;
-    &:before{
-      content: '';
-      display: inline-block;
-      width: 14px;
-      height: 14px;
-      border: 1px solid #333333;
-      background-color: #14a85c;
-      border-radius: 50%;
-      position: relative;
-      top: 13px;
-      left: 2px;
-    }
-    &:after{
-      content: '';
-      display: inline-block;
-      width: 2px;
-      height: 63px;
-      background-color: $itemColor1;
-      margin-top: 68px;
-      position: relative;
-      right: 6px;
-    }
   }
-  .HiW-text{
-    @include font(16px, $bgColorFooter - #111, 400, $font-regular);
+  .block {
+    width: 380px;
+    height: 160px;
+  }
+  .margin-left {
+    margin-left: 15px;
+  }
+  .margin-bottom {
+    margin-bottom: 15px;
+  }
+  .bl {
+    p {
+    text-align: center;
+    padding-top: 25px;
     text-transform: uppercase;
-    display: inline-block;
-    vertical-align: top;
-    margin-top: 15px;
-    margin-left: 10px;
-    span{
-      @include font(14px, white, 700, $font-bold);
-      display: inline-block;
-      &:hover{
-        color:red;
-        cursor: pointer;
-      }
+    color: $textPrimary;
     }
   }
+  .icon-ad-icon {
+    background-image: url(sprite.png);
+    background-position: 0px -2123px;
+    width: 22px;
+    height: 34px;
+  }
+  .icon-ad-icon2 {
+    background-image: url(sprite.png);
+    background-position: 0px -2657px;
+    width: 33px;
+    height: 34px;
+  }
+  .icon-ad-icon3 {
+    background-image: url(sprite.png);
+    background-position: 0px -4263px;
+    width: 24px;
+    height: 40px;
+  }
+  .icon-ad-icon4 {
+    background-image: url(sprite.png);
+    background-position: 0px -1057px;
+    width: 26px;
+    height: 32px;
+  }
+  .icon-ad-icon5 {
+    background-image: url(sprite.png);
+    background-position: 0px -3191px;
+    width: 33px;
+    height: 35px;
+  }
+  .icon-ad-icon6 {
+    background-image: url(sprite.png);
+    background-position: 0px -3726px;
+    width: 38px;
+    height: 37px;
+  }
 
-  .border-bottom{
-    border-bottom: 1px dashed $itemColor1;
-  }
-  .HiW-block-center{
+  h1 {
     text-align: center;
+    text-transform: uppercase;
   }
-  .HiW-block-right{
-    text-align: right;
-    .round-green{
-      margin: -6px 184px -7px;
+
+  .text {
+    p {
+      font-weight: 300;
+      text-align: justify;
     }
   }
 }
