@@ -1,28 +1,33 @@
 .custom-writing {
-  height: 470px;
    h1,h2 {
      text-transform: uppercase;
      color: $textSecondary;
      text-align: center;
    }
   h1 {
-    margin-top: 62px;
+    font-size: 48px;
+    margin-top: 65px;
+  }
+  h2 {
+    font-size: 36px;
+  }
+  .padding-top {
+    padding-top: 30px;
   }
   .text-animation {
-    width: 290px;
-    margin-left: 355px;
+    font-weight: 300;
+    font-size: 20px;
+    margin-left: -48px;
     span {
       text-transform: uppercase;
-      font-size: 20px;
+      font-size: 27px;
+      line-height: 30px;
     }
   }
   .img-boy {
-    width: 1192px;
-    height: 506px;
-    position: absolute;
-    background-image: url('../img/img-boy.png');
-    bottom: 236px;
-    left: 120px;
+    background: url('../img/img-boy.png') 0 120px no-repeat,
+    url('../img/img-books-lamp.png') 960px 40px no-repeat,
+    url('../img/light.png') 330px 85px no-repeat
   }
 }
 
@@ -38,57 +43,41 @@
   h2 {
     text-align: center;
   }
-  .block {
-    width: 380px;
-    height: 160px;
-  }
-  .margin-left {
-    margin-left: 15px;
-  }
-  .margin-bottom {
-    margin-bottom: 15px;
-  }
   .bl {
-    p {
-    text-align: center;
-    padding-top: 25px;
-    text-transform: uppercase;
-    color: $textPrimary;
+    vertical-align: middle;
+    i, p {
+      text-align: center;
+      vertical-align: middle;
+      text-transform: uppercase;
+      color: $textPrimary;
+      background-color: $lightGreen;
     }
   }
   .icon-ad-icon {
-    background-image: url(sprite.png);
-    background-position: 0px -2123px;
-    width: 22px;
-    height: 34px;
+    background: url('../img/sprite.png') 0 -2123px no-repeat;
   }
   .icon-ad-icon2 {
-    background-image: url(sprite.png);
-    background-position: 0px -2657px;
+    background: url('../sprite.png') 0 -2657px no-repeat;
     width: 33px;
     height: 34px;
   }
   .icon-ad-icon3 {
-    background-image: url(sprite.png);
-    background-position: 0px -4263px;
+    background: url('../sprite.png') 0 -4263px no-repeat;
     width: 24px;
     height: 40px;
   }
   .icon-ad-icon4 {
-    background-image: url(sprite.png);
-    background-position: 0px -1057px;
+    background: url('../sprite.png') 0 -1057px no-repeat;
     width: 26px;
     height: 32px;
   }
   .icon-ad-icon5 {
-    background-image: url(sprite.png);
-    background-position: 0px -3191px;
+    background: url('../sprite.png') 0 -3191px no-repeat;
     width: 33px;
     height: 35px;
   }
   .icon-ad-icon6 {
-    background-image: url(sprite.png);
-    background-position: 0px -3726px;
+    background: url('../sprite.png') 0 -3726px no-repeat;
     width: 38px;
     height: 37px;
   }

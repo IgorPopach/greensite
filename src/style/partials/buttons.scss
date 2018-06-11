@@ -1,28 +1,49 @@
+
 .custom-writing {
   .live-chat {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
     margin-top: 62px;
+    padding: 6px 12px;
     border-radius: 3px;
     border: 1px solid $textSecondary;
     a {
-      .fa-angle-right {
-        content: '\f105';
-        font-family: $font-awesome;
-        font-size: 25px;
-      }
       color: $textSecondary;
       text-transform: uppercase;
+      text-decoration: none;
+    }
+    &:hover {
+      background-color: $secondaryColor;
+    }
+    .fa-angle-right {
+      vertical-align: middle;
+      content: '\f105';
+      font-family: $font-awesome;
+      font-size: 25px;
+    }
+    span {
+      display: inline-block;
+      font-size: 18px;
+      vertical-align: middle;
     }
   }
-
   .order-now {
-    width: 270px;
-    height: 70px;
-    margin-bottom: 50px;
+    display: inline-block;
+    font-size: 18px;
+    padding: 25px 75px;
+    margin: 0 0 50px 0;
     border: 1px solid $textSecondary;
     border-radius: 3px;
     background-color: $secondaryColor;
     color: $textSecondary;
+    &:hover {
+      color: #002157;
+      background-color: #fab916;
+      border: 1px solid #002157;
+    }
   }
+
 }
 
 .special-offer {
@@ -33,5 +54,8 @@
     background-color: $green;
     border: 1px solid $textSecondary;
     border-radius: 3px;
+    &:hover {
+      background-color: $secondaryColor;
+    }
   }
 }
