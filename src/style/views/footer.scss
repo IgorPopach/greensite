@@ -17,7 +17,6 @@
     position: relative;
     font-weight: 300;
     font-size: 11px;
-    width: 850px;
     padding: 25px;
     border: 2px solid #fff;
     text-align: justify;
@@ -28,16 +27,15 @@
       display: block;
       width: 34px;
       height: 34px;
+      text-align: center;
+      vertical-align: middle;
       background-color: $secondaryColor;
       border: 1px solid $textSecondary;
       .fa-angle-down {
         content: '\f107';
-        font-size: 25px;
+        font-size: 34px;
         font-family: $font-awesome;
-        display: block;
-        margin: auto;
         color: $textSecondary;
-        text-align: center;
       }
     }
   }

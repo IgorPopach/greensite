@@ -51,21 +51,4 @@
 
 
 
-.my-list{
-  li{
-    position: relative;
-    list-style-type: none;
-    &:before{
-      outline: 1px solid #003300;
-      content: '\f054';
-      font-family: $font-awesome;
-      position: absolute;
-      top: 50%;
-      left: -10px;
-      display: block;
-      margin-top: -5px;
-      width: 10px;
-      height: 10px;
-    }
-  }
-}
+

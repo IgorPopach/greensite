@@ -43,64 +43,79 @@
   h2 {
     text-align: center;
   }
+  .align-center {
+    text-align: center;
+  }
   a {
     display: inline-block;
-    //width: 375px;
-    //height: 160px;
+    width: 375px;
+    height: 160px;
     vertical-align: middle;
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
-    padding: 40px 80px;
+    padding-top: 90px;
     color: $textPrimary;
-    background-color: $lightGreen;
-    &:hover {
-      background-color: $secondaryColor;
-      color: $textSecondary;
+    //p {
+    //}
+    &.icon-ad-icon {
+      background: $lightGreen url('../img/sprite.png') center -2088px no-repeat;
+
+
+      &:hover {
+        background: url('../img/sprite.png') center -1554px no-repeat;
+        background-color: $secondaryColor;
+        color: $textSecondary;
+      }
     }
-    & .icon-ad-icon-white:hover {
-      background: url('../img/sprite.png') 0px -1589px no-repeat;
-      width: 22px;
-      height: 34px;
+    &.icon-ad-icon2 {
+      background: $lightGreen url('../img/sprite.png') center -2622px no-repeat;
+
+      &:hover {
+        background: url('../img/sprite.png') center -1554px no-repeat;
+        background-color: $secondaryColor;
+        color: $textSecondary;
+      }
+    }
+    &.icon-ad-icon3 {
+      background: $lightGreen url('../img/sprite.png') center -4228px no-repeat;
+
+      &:hover {
+        background: url('../img/sprite.png') center -1554px no-repeat;
+        background-color: $secondaryColor;
+        color: $textSecondary;
+      }
+    }
+    &.icon-ad-icon4 {
+      background: $lightGreen url('../img/sprite.png') center -1022px no-repeat;
+
+      &:hover {
+        background: url('../img/sprite.png') center -1554px no-repeat;
+        background-color: $secondaryColor;
+        color: $textSecondary;
+      }
+    }
+    &.icon-ad-icon5 {
+      background: $lightGreen url('../img/sprite.png') center -3156px no-repeat;
+
+      &:hover {
+        background: url('../img/sprite.png') center -1554px no-repeat;
+        background-color: $secondaryColor;
+        color: $textSecondary;
+      }
+    }
+    &.icon-ad-icon6 {
+      background: $lightGreen url('../img/sprite.png') center -3691px no-repeat;
+
+      &:hover {
+        background: url('../img/sprite.png') center -1554px no-repeat;
+        background-color: $secondaryColor;
+        color: $textSecondary;
+      }
     }
   }
   .bl {
     margin-bottom: 15px;
-  }
-  i {
-    display: inline-block;
-    vertical-align: middle;
-    margin-bottom: 20px;
-   }
-  .icon-ad-icon {
-    background: url('../img/sprite.png') 0 -2123px no-repeat;
-    width: 22px;
-    height: 34px;
-  }
-  .icon-ad-icon2 {
-    background: url('../sprite.png') 0 -2657px no-repeat;
-    width: 33px;
-    height: 34px;
-  }
-  .icon-ad-icon3 {
-    background: url('../sprite.png') 0 -4263px no-repeat;
-    width: 24px;
-    height: 40px;
-  }
-  .icon-ad-icon4 {
-    background: url('../sprite.png') 0 -1057px no-repeat;
-    width: 26px;
-    height: 32px;
-  }
-  .icon-ad-icon5 {
-    background: url('../sprite.png') 0 -3191px no-repeat;
-    width: 33px;
-    height: 35px;
-  }
-  .icon-ad-icon6 {
-    background: url('../sprite.png') 0 -3726px no-repeat;
-    width: 38px;
-    height: 37px;
   }
 
   h1 {
@@ -216,10 +231,32 @@
 
 .read-more {
   h2 {
-    font-size: 36px;
+    font-size: 34px;
     text-align: center;
+    margin-top: 25px;
   }
   ul li {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: justify;
+  }
+  .my-list{
+    li{
+      position: relative;
+      list-style-type: none;
+      &:before{
+        position: absolute;
+        content: '\f054';
+        font-family: $font-awesome;
+        left: -20px;
+        display: block;
+        color: $secondaryColor;
+      }
+    }
+  }
+
+  .text {
     font-size: 14px;
     font-weight: 300;
     line-height: 30px;

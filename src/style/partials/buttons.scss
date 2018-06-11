@@ -72,6 +72,18 @@
       color: $textSecondary;
       border-radius: 2px;
       text-decoration: none;
+      .fa-angle-right {
+        vertical-align: middle;
+        content: '\f105';
+        font-family: $font-awesome;
+        font-size: 25px;
+        color: $textSecondary;
+      }
+      span {
+        vertical-align: middle;
+        font-size: 18px;
+        line-height: 18px;
+      }
     }
   }
 }
