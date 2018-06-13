@@ -1,0 +1,83 @@
+body {
+  @media screen and (max-width: 767px) {
+    .container {
+      padding: 0 15px;
+    }
+  }
+}
+.custom-writing {
+  @media screen and (max-width: 767px) {
+    .container {
+      padding: 0;
+    }
+    h1 {
+      font-size: 43px;
+    }
+    h2 {
+      font-size: 32px;
+    }
+    .text-animation {
+      display: none;
+    }
+    .align-center {
+      text-align: center;
+    }
+    .special-offer {
+      display: none;
+    }
+  }
+}
+
+.our-advantages {
+  @media screen and (min-width: 768px) {
+    #carousel-example-generic {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .carousel-on {
+      display: none;
+    }
+    h1 span {
+      display: none;
+    }
+    p {
+      font-size: 12px;
+      margin-bottom: 15px;
+    }
+  }
+
+}
+
+.h-i-w {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.read-more {
+  @media screen and (max-width: 767px) {
+    h2 {
+      font-size: 30px;
+    }
+  }
+}
+
+.site-footer {
+  .main-footer {
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+  .contact-footer {
+    @media screen and (max-width: 767px) {
+      &-social {
+        display: none;
+      }
+      .copyright {
+        background-color: $green;
+        padding: 20px 0;
+      }
+    }
+  }
+}

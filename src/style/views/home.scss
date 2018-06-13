@@ -34,9 +34,15 @@
     url('../img/img-books-lamp.png') 960px 40px no-repeat,
     url('../img/light.png') 330px 85px no-repeat;
   }
-  @media screen and (max-width: 1199px) {
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
     .img-boy {
-      background: url('../img/img-boy.png') 0 bottom no-repeat,
+      background: url('../img/img-boy.png') 0 bottom no-repeat;
+    }
+  }
+  @media screen and (max-width: 991px) {
+    .img-boy {
+      background: url('../img/img-books-lamp-left.png') 0 center no-repeat,
+      url('../img/img-books-lamp-right.png') 100% center no-repeat,
     }
   }
 }

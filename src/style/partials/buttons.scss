@@ -67,6 +67,10 @@
       font-size: 18px;
       vertical-align: middle;
     }
+    @media screen and (max-width: 991px) {
+      display: none;
+
+    }
   }
   .order-now {
     display: inline-block;
