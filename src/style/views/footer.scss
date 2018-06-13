@@ -12,6 +12,7 @@
   .logo-footer {
     background-color: #ccd3dd;
     border: 2px solid #fff;
+    font-size: 13px;
   }
   .text-footer {
     position: relative;
@@ -42,6 +43,11 @@
 }
 
 .contact-footer {
+  @media screen and (max-width: 1200px) {
+    span {
+      display: none;
+    }
+  }
   .join-us {
     display: flex;
     min-height: 40px;

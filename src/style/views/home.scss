@@ -8,6 +8,11 @@
     font-size: 48px;
     margin-top: 65px;
   }
+  @media screen and (max-width: 1199px) {
+    h1 {
+      margin-top: 20px;
+    }
+  }
   h2 {
     font-size: 36px;
   }
@@ -27,7 +32,12 @@
   .img-boy {
     background: url('../img/img-boy.png') 0 120px no-repeat,
     url('../img/img-books-lamp.png') 960px 40px no-repeat,
-    url('../img/light.png') 330px 85px no-repeat
+    url('../img/light.png') 330px 85px no-repeat;
+  }
+  @media screen and (max-width: 1199px) {
+    .img-boy {
+      background: url('../img/img-boy.png') 0 bottom no-repeat,
+    }
   }
 }
 
@@ -42,22 +52,22 @@
 .our-advantages {
   h2 {
     text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
   .align-center {
     text-align: center;
   }
   a {
-    display: inline-block;
-    width: 375px;
+    display: block;
     height: 160px;
     vertical-align: middle;
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
     padding-top: 90px;
+    transition: all 0.3s;
     color: $textPrimary;
-    //p {
-    //}
     &.icon-ad-icon {
       background: $lightGreen url('../img/sprite.png') center -2088px no-repeat;
 
@@ -115,13 +125,14 @@
     }
   }
   .bl {
-    margin-bottom: 15px;
+    margin-bottom: 30px;
   }
 
   h1 {
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
+    margin: 35px 0;
     color: black;
   }
 
@@ -134,12 +145,16 @@
 }
 
 .h-i-w {
+  .row.margin-bottom {
+    margin-bottom: 70px;
+  }
   h2 {
     font-size: 36px;
     text-align: center;
+    margin: 40px 0;
     color: $textSecondary;
   }
-  .HiW-block {
+  .HiW-block-top {
     display: inline-block;
     width: 70px;
     height: 70px;
@@ -169,13 +184,28 @@
       right: 6px;
     }
   }
-  .HiW-text {
+  .HiW-text-top {
     text-transform: uppercase;
     display: inline-block;
     vertical-align: top;
+    text-align: center;
     font-size: 16px;
     margin-top: 15px;
     margin-left: 10px;
+  }
+  .HiW-text-bottom {
+    text-transform: uppercase;
+    display: inline-block;
+    vertical-align: bottom;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+  }
+  @media screen and (max-width: 1023px) {
+    .HiW-text-top, .HiW-text-bottom {
+      font-size: 13px;
+    }
   }
 
   .HiW-block-center {
@@ -194,12 +224,13 @@
   }
 
 
-  .HiW-block-2 {
+  .HiW-block-bottom {
+    position: relative;
     display: inline-block;
     vertical-align: bottom;
     width: 70px;
     height: 70px;
-    //margin-top: 68px;
+    margin-top: 66px;
     border: 1px solid #cccccc;
     background-color: $secondaryColor;
     text-align: center;
@@ -211,9 +242,9 @@
       border: 1px solid #333333;
       background-color: #f2c40e;
       border-radius: 50%;
-      position: relative;
-      top: 13px;
-      left: 2px;
+      position: absolute;
+      top: -74px;
+      left: 27px;
     }
     &:after{
       content: '';
@@ -221,9 +252,9 @@
       width: 2px;
       height: 63px;
       background-color: $itemColor1;
-      margin-top: -168px;
-      position: relative;
-      right: 6px;
+      position: absolute;
+      top: -61px;
+      left: 33px;
     }
   }
 
